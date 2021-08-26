@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestProject", "TestProject\TestProject.csproj", "{4432A480-5CB9-46AA-B4D4-A9C2F3D81197}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GmailAPI", "GmailAPI\GmailAPI.csproj", "{AA8848E9-77AC-4D5A-935F-4F13C5424056}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Mailinator", "Mailinator\Mailinator.csproj", "{525E4E9D-802F-409E-8A5C-77E87F671CC0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4432A480-5CB9-46AA-B4D4-A9C2F3D81197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4432A480-5CB9-46AA-B4D4-A9C2F3D81197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4432A480-5CB9-46AA-B4D4-A9C2F3D81197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4432A480-5CB9-46AA-B4D4-A9C2F3D81197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA8848E9-77AC-4D5A-935F-4F13C5424056}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA8848E9-77AC-4D5A-935F-4F13C5424056}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA8848E9-77AC-4D5A-935F-4F13C5424056}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA8848E9-77AC-4D5A-935F-4F13C5424056}.Release|Any CPU.Build.0 = Release|Any CPU
+		{525E4E9D-802F-409E-8A5C-77E87F671CC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{525E4E9D-802F-409E-8A5C-77E87F671CC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{525E4E9D-802F-409E-8A5C-77E87F671CC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{525E4E9D-802F-409E-8A5C-77E87F671CC0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {14705EB0-FC72-45CD-BBF7-20E042DA53CC}
+	EndGlobalSection
+EndGlobal
