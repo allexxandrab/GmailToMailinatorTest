@@ -1,4 +1,5 @@
-﻿using Google.Apis.Auth.OAuth2;
+﻿using GmailAPI.Objects;
+using Google.Apis.Auth.OAuth2;
 using Google.Apis.Gmail.v1;
 using Google.Apis.Gmail.v1.Data;
 using Google.Apis.Services;
@@ -81,6 +82,24 @@ namespace GmailAPI.Core
          Message testResponse = request.Execute();
             return testResponse;
     }
+
+        public Message SendMessage(EmailInfo emailInfo, string domen = "@mailinator.com")
+        {
+            var mailMessage = new System.Net.Mail.MailMessage();
+            mailMessage.To.Add($"{emailInfo.Mailinator}{domen}");
+            mailMessage.Subject = emailInfo.Subject;
+            mailMessage.Body = emailInfo.Body;
+            var mimeMessage = MimeMessage.CreateFromMailMessage(mailMessage);
+
+            var gmailMessage = new Message
+            {
+                Raw = Encode(mimeMessage)
+            };
+
+            var request = service.Users.Messages.Send(gmailMessage, "me");
+            Message testResponse = request.Execute();
+            return testResponse;
+        }
 
         private string Decode (string data)
         {

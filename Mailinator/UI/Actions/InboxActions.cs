@@ -25,13 +25,13 @@ namespace Mailinator.UI.Actions
         public string GetReceiver()
         {
             Wait.UntilTrue(() => !string.IsNullOrEmpty(messagePage.FieldTo.Text));
-            Debug.WriteLine("[INFO] : Getting the receiver field value ");
+            Debug.WriteLine($"[INFO] : Getting the receiver field value");
             return messagePage.FieldTo.Text;
         }
         public string GetSender()
         {
             Wait.UntilTrue(() => !string.IsNullOrEmpty(messagePage.FieldFrom.Text));
-            Debug.WriteLine("[INFO] : Getting the sender field value");
+            Debug.WriteLine($"[INFO] : Getting the sender field value");
             return messagePage.FieldFrom.Text;
          }
             

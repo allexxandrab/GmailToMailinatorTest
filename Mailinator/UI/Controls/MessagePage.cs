@@ -9,9 +9,10 @@ namespace Mailinator.UI.Controls
         {
         }
 
-        public IWebElement FieldTo => Driver.FindElement(By.XPath("//div[contains(text(),'To')]/following-sibling::div"));
-        
+       public IWebElement FieldTo => Driver.FindElement(By.XPath("//div[contains(text(),'To')]/following-sibling::div"));
 
-        public IWebElement FieldFrom => Driver.FindElement(By.XPath("//div[contains(text(),'From')]/following-sibling::div"));
+        
+       public IWebElement FieldFrom => Driver.FindElement(By.XPath("//div[contains(text(),'From')]/following-sibling::div"));
+
     }
 }
